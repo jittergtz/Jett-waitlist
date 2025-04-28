@@ -3,6 +3,8 @@ import React, { ChangeEvent, FormEvent, useState, } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import VideoPlayer from './VideoPlayer';
+import { AuroraBackground } from './HeroBackground';
+import HeroPreview from './HeroPreview';
 
 
 function Hero() {
@@ -27,7 +29,7 @@ function Hero() {
     setIsLoading(true);
     try {
       // Using the API route approach to handle the database operation securely
-      const response = await fetch('/api/post-info', {
+      const response = await fetch('/api/waitlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -61,11 +63,13 @@ function Hero() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen gap-5 pt-40 p-2 items-center relative">
+    <AuroraBackground className='min-h-screen  h-full pb-20'>
+    <div className="flex flex-col min-h-screen gap-5 pt-16 sm:pt-28 p-2 items-center relative">
         <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#171717_110%)]"></div>
         <Image
         src="/Jett-logo2.jpeg"
         alt="One logo"
+      
         width={70}
         height={70}
        className='rounded-xl pointer-events-none'
@@ -111,9 +115,10 @@ function Hero() {
       {error && <p className="text-neutral-200 text-light">Youre already on the waitlist!</p>}
       <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-[#5b5b5b] via-[#ffffffdd] to-[#5b5b5b]'>Join the Waitlist</h3>
       <div className=' mt-16 sm:mt-28'>
-      <VideoPlayer videoSrc={"/video/jettPreview.mov"}/>
+        <HeroPreview/>
       </div>
     </div>
+    </AuroraBackground>
   );
 }
 

@@ -1,4 +1,6 @@
+import ContactsSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
+import VideoPlayer from "@/components/VideoPlayer";
 
 
 
@@ -12,11 +14,11 @@ export default function Home() {
     
     <div className="relative ">
       <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_120%,#000_80%,#171717_120%)]"></div>
-
+         <ContactsSection/>
       </div>
     
   
-
+ <VideoPlayer videoSrc={"/video/jettPreview.mov"}/>
     </main>
 
 
