@@ -1,8 +1,7 @@
 "use client"
 import React from 'react';
-import { Mail, Users } from 'lucide-react';
-import Image from 'next/image';
 import { motion } from 'motion/react';
+import VideoPlayer from './VideoPlayer';
 
 
 
@@ -33,15 +32,7 @@ const ContactsSection: React.FC = () => {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 5, ease: "easeOut" }}
         >
-          <Image
-            alt="Audiences Screenshot"
-            src="/desert.jpg"
-            width={1232}
-            height={657}
-            priority
-            className="border p-1 pointer-events-none   border-slate-500/5 mb-20 block w-full rounded-xl"
-          
-          />
+           <VideoPlayer size="full" videoSrc={"/video/main.webm"}/>
         </motion.div>
       </div>
     </section>

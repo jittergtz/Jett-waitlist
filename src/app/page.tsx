@@ -36,7 +36,7 @@ export default function Home() {
             </span>
           </p>
         </div>
-      <VideoPlayer videoSrc={"/video/ComposePreview.webm"}/>
+      <VideoPlayer size="small" videoSrc={"/video/ComposePreview.webm"}/>
       </div>
   
     <Bento/>
