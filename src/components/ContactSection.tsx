@@ -10,7 +10,7 @@ const ContactsSection: React.FC = () => {
   return (
     <section className="w-full items-center sm:py-24 mt-[10vh] flex flex-col py-10 px-0">
       <div className='max-w-5xl w-full'>
-        <div className="flex flex-col mb-8 md:mb-16 text-center items-center justify-center">
+        <div className="flex flex-col mb-8 md:mb-16  text-center items-center justify-center">
           <span className="text-zinc-300 flex items-center justify-center gap-2 bg-gradient-to-r bg-clip-text mb-6">
           </span>
           
@@ -39,7 +39,7 @@ const ContactsSection: React.FC = () => {
             width={1232}
             height={657}
             priority
-            className="border p-1 pointer-events-none   border-slate-500/5 mb-20 block w-full rounded-2xl"
+            className="border p-1 pointer-events-none   border-slate-500/5 mb-20 block w-full rounded-xl"
           
           />
         </motion.div>
