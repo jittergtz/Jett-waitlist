@@ -94,10 +94,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   };
 
   return (
-    <div className={`relative overflow-hidden bg-neutral-800/10 rounded-lg border p-1 md:p-1.5 border-[#1a1a1a]  shadow-lg shadow-[#0b0b0bc6] ${className} `}>
+    <div className={`relative overflow-hidden bg-neutral-800/10 rounded-md  border p-1 md:p-1.5 border-[#343434]  shadow-lg shadow-[#0b0b0bc6]  ${className} `}>
       <video
         ref={videoRef}
-        className={`w-full h-full object-cover ${size === 'small' ? 'max-w-2xl' : ' max-w-5xl '} rounded-lg`}
+        className={`w-full h-full object-cover  ${size === 'small' ? 'max-w-2xl' : ' max-w-[1100px] '} rounded-sm`}
         poster={posterSrc}
         playsInline
         muted={muted}

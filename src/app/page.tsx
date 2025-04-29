@@ -3,6 +3,7 @@ import ContactsSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import VideoPlayer from "@/components/VideoPlayer";
+import Image from "next/image";
 
 
 
@@ -15,11 +16,11 @@ export default function Home() {
     <Hero/>
     
     <div className="relative ">
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_120%,#000_80%,#171717_120%)]"></div>
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24  [background:radial-gradient(125%_125%_at_50%_120%,#000_80%,#171717_120%)]"></div>
     <ContactsSection/>
       </div>
     
-    <div className="flex flex-col items-center md:flex-row justify-center gap-5 py-40 p-2">
+    <div className="flex flex-col items-center md:flex-row justify-center gap-5 py-64 p-2">
     <div className="flex flex-col mb-8 md:mb-16 text-center  md:text-start md:items-start gap-3 justify-center">
           <span className="text-zinc-300 flex items-center justify-center gap-2 bg-gradient-to-r bg-clip-text mb-6">
           </span>
@@ -36,7 +37,8 @@ export default function Home() {
             </span>
           </p>
         </div>
-      <VideoPlayer size="small" videoSrc={"/video/ComposePreview.webm"}/>
+    
+      <VideoPlayer size="small" className="border" videoSrc={"/video/ComposePreview.webm"}/>
       </div>
   
     <Bento/>
