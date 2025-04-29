@@ -37,3 +37,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+::selection {
+  background-color: #32323145; /* Highlight color */
+
+}

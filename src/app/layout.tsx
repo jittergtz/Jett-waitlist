@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Jett Email waitlist, the next generation of email.",
   icons: [{ rel: "icon", url: "/Jett-logo2.jpeg" }],
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
       </body>

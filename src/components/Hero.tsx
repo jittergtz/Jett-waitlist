@@ -74,8 +74,8 @@ function Hero() {
         height={70}
        className='rounded-xl pointer-events-none'
        priority/>
-      <h1 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-l from-zinc-500 via-zinc-50 to-zinc-400">Better Mail Experience</h1>
-      <p className="mx-auto max-w-lg text-lg text-center text-zinc-400">Lets take your email experience to the next level. Join our waitlist to be the first to know when we launch.
+      <h1 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-l from-zinc-600 via-zinc-950 to-zinc-800">Better Mail Experience</h1>
+      <p className="mx-auto max-w-lg sm:text-lg  text-center text-zinc-900">Lets take your email experience to the next level. Join our waitlist to be the first to know when we launch.
 
      </p>
       <form onSubmit={handleSubmit} className="flex h-12 pl-3 w-full max-w-xl rounded-xl bg-neutral-950 border border-[#ffffff1d] overflow-hidden">
@@ -108,12 +108,12 @@ function Hero() {
               Submitting...
             </>
           ) : (
-            'Submit'
+            'sign up'
           )}
         </button>
       </form>
       {error && <p className="text-neutral-200 text-light">Youre already on the waitlist!</p>}
-      <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-[#5b5b5b] via-[#ffffffdd] to-[#5b5b5b]'>Join the Waitlist</h3>
+      <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-[#3a3a3a] via-[#181a19dd] to-[#313332]'>Join the Waitlist</h3>
       <div className=' mt-16 sm:mt-28'>
         <HeroPreview/>
       </div>
