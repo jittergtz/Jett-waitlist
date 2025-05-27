@@ -20,9 +20,9 @@ const ContactsSection: React.FC = () => {
           
           <p className="text-md md:text-[1.125rem] md:leading-[1.5] text-zinc-400 font-normal">
             <span data-br=":rbh:" data-brr="1">
-              Add contacts in minutes, regardless the size of your list. 
+            the furthest you can go with email.       Manage emails with ease,
               <br className="hidden sm:block" /> 
-              Get full visibility of each contact and their personal attributes.
+ and make your emails stand out like never before.
             </span>
           </p>
         </div>
@@ -42,7 +42,7 @@ const ContactsSection: React.FC = () => {
           transition={{ duration: 5, ease: "easeOut" }}
         >
               <div className="flex justify-center">
-           <VideoPlayer className='border-none w-5xl mt-[67px] md:h-[580px]' size="full" videoSrc={"/video/main.webm"}/>
+           <VideoPlayer className='border-none w-5xl mt-[67px] md:h-[580px]' size="full" videoSrc={"/video/prev1.mov"}/>
            </div>
         </motion.div> 
     

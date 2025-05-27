@@ -2,7 +2,6 @@
 import React, { ChangeEvent, FormEvent, useState, } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import VideoPlayer from './VideoPlayer';
 import { AuroraBackground } from './HeroBackground';
 import HeroPreview from './HeroPreview';
 

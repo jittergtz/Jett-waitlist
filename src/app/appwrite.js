@@ -21,7 +21,7 @@ export async function addToWaitlist(email) {
       DATABASE_ID,
       WAITLIST_COLLECTION_ID,
       'unique()', // Appwrite will generate a unique ID
-      {  EmailAdress: email }
+      {  EmailAddress: email }
     );
     return { success: true, data: response };
   } catch (error) {
