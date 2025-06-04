@@ -1,9 +1,9 @@
 
 import Catch from "@/components/Catch";
-import ContactsSection from "@/components/ContactSection";
+
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import VideoPlayer from "@/components/VideoPlayer";
+
 
 
 
