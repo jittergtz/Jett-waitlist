@@ -22,7 +22,7 @@ function page() {
       <p className="text-lg text-zinc-600 text-center">We sent you an Email with access details when were ready</p>
       <Link
         href={"/"}
-        className=" mt-5 hover:bg-neutral-300 z-50 top-5 left-4  bg-[#2d2d2d] p-1.5 rounded-lg px-4 border border-black/10 text-neutral-400"
+        className=" mt-5 hover:bg-neutral-300 z-50 top-5 left-4  bg-[#2d2d2d] p-1.5 rounded-full px-4 border border-black/10 text-neutral-400"
       >
       Back  Home
       </Link>
